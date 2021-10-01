@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- 2021-10-01: Optimize query performance
 - 2021-07-26: style(db): sync schema changes
 - 2021-05-18: feat(api): update cache TTL
 - 2021-03-11: refactor(auth): fix CORS headers
