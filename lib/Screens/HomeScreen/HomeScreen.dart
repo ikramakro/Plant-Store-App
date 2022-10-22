@@ -79,7 +79,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       return Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: CustomContainer(
-                          ontap: () {},
                           name: DataModal.name[index],
                           path: DataModal.imgpath[index],
                           price: DataModal.price[index],

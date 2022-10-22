@@ -1,3 +1,5 @@
+import '../../Screens/ItemDetailScreen/ItemDetailScreen.dart';
+
 class DataModal {
   static List imgpath = [
     'Assets/Images/flowerpot (6).png',
@@ -34,5 +36,14 @@ class DataModal {
     '\$490',
     '\$500',
     '\$932',
+  ];
+  static List nivagte = [
+    ItemDetailScreen,
+    ItemDetailScreen,
+    ItemDetailScreen,
+    ItemDetailScreen,
+    ItemDetailScreen,
+    ItemDetailScreen,
+    ItemDetailScreen,
   ];
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plantapp/Screens/CartScreen/CartScreen.dart';
 import 'package:plantapp/Screens/Custom%20Widget/CustomCircularContainer.dart';
 import 'package:provider/provider.dart';
 
@@ -181,7 +182,12 @@ class ItemDetailScreen extends StatelessWidget {
                                   MaterialStateProperty.all(Colors.grey[200])),
                         ),
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CartScreen()));
+                          },
                           style: ButtonStyle(
                             padding: MaterialStateProperty.all(
                               const EdgeInsets.symmetric(
