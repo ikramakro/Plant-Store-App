@@ -4,13 +4,14 @@ import 'package:flutter/material.dart';
 class CustomTextfield extends StatelessWidget {
   String hinttxt;
   bool obsecure;
-  var icon;
-  CustomTextfield({
-    Key? key,
-    required this.hinttxt,
-    required this.obsecure,
-    required this.icon,
-  }) : super(key: key);
+  var icon, surfixIcon;
+  CustomTextfield(
+      {Key? key,
+      required this.hinttxt,
+      required this.obsecure,
+      required this.icon,
+      this.surfixIcon})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,15 +21,16 @@ class CustomTextfield extends StatelessWidget {
           contentPadding: const EdgeInsets.all(10.0),
           hintText: hinttxt,
           prefixIcon: icon,
+          suffixIcon: surfixIcon,
           fillColor: const Color.fromARGB(255, 233, 230, 230),
           filled: true,
           focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(10),
               borderSide: const BorderSide(
                 color: Color.fromARGB(255, 233, 230, 230),
               )),
           enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(10),
               borderSide: const BorderSide(
                 color: Color.fromARGB(255, 233, 230, 230),
               ))),
